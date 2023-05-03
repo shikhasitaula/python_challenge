@@ -1,10 +1,12 @@
-# Impots csv and math library.
+# Impots csv ,os and math library.
 import csv
 import math
+import os
+
 # Opens text file named PyPoll_result.txt.
-file_write = open("./analysis/PyPoll_result.txt", 'w' )
+file_write = open(os.path.join('.','analysis','PyPoll_result.txt'), 'w' )
 # Goes to the the folder where the csv file is saved.
-csvpath = "./Resources/election_data.csv"
+csvpath = os.path.join('.','Resources','election_data.csv')
 # Prints the logic to both terminal and text file.
 def print_in_terminal_and_text_file(file_open, text):
     print(text)

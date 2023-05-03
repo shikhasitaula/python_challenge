@@ -1,12 +1,13 @@
 # Imports different libraries to perform methods.
 import math 
 import csv
+import os
 
 # Assigns the path to get the correct file from where it is stored.
-csvpath = "./Resources/budget_data.csv" 
+csvpath = os.path.join('.','Resources','budget_data.csv') 
 
 # Opens new file for storing the result.
-file_write = open("./analysis/PyBank_result.txt", 'w')
+file_write = open(os.path.join('.','analysis','PyBank_result.txt'), 'w' )
 
 # The function below wrint output to both terminal and file once it is called.
 def print_to_terminal_and_file(file_open, text):
